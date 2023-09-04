@@ -136,7 +136,7 @@ The highest possible action-value function across all policies.
 $$q_{\pi_*}(s, a) = \max_{\pi} q_{\pi}(s, a)$$
 
 __How Bellman optimality equation relates to Bellman equations__  
-To derive the Bellman optimality equation for $v_{\pi_*}(s)$, you replace $\pi$ with $\pi_*$ in the standard Bellman equation for $v_\pi(s)$.
+To derive the Bellman optimality equation for $v_{π_*}(s)$, you replace $π$ with $π_*$ in the standard Bellman equation for $v_\pi(s)$.
 Resulting in an equation that no longer depends on any specific policy and represents the maximum possible value of state $s$ under any optimal policy.
 
 ### Using Optimal Value Functions to Get Optimal Policies
@@ -147,14 +147,14 @@ An optimal value function measure how good each state is, by quantifying how muc
 __Determining an optimal policy__  
 Given the optimal value function $v_*$ and access to the dynamics of the environment (transition probabilities and rewards), we can derive the optimal policy $\pi_∗$ by considering all available actions in each state and selecting the action that maximizes the expected value based on the optimal value function. 
 
-__Optimal state-value function__ ($v_*$)  
-
-$$v_*(s) = \max_a \sum_{s', r} p(s', r|s, a)[r + \gamma v_*(s')]$$
-
-__Optimal policy function__ ($\pi_*$)  
-
-$$\pi_*(s) = \arg\max_a \sum_{s', r} p(s', r|s, a)[r + \gamma v_*(s')]$$
-
+__Optimal state-value function__  
+  
+$$v_*(s) = \max_a \sum_{s', r} p(s', r|s, a)[r + \gamma v_*(s')]$$  
+  
+__Optimal policy function__  
+  
+$$\pi_*(s) = \arg\max_a \sum_{s', r} p(s', r|s, a)[r + \gamma v_*(s')]$$  
+  
 $\max$ calculates the maximum expected return achievable among all available actions  
 $\argmax$ indicates which action to choose to achieve the maximum expected return  
 
