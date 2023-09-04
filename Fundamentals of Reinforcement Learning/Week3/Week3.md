@@ -93,8 +93,9 @@ __Limitations of Bellman Equations__
 ## Optimality (Optimal Policies & Value Functions)
 
 ### Defining Optimal Policies
-
+  
 ![optimalpolicy](week3-4.png)  
+
 Policy $\pi_1$ is considered at least as good as policy $\pi_2$,
 if the value under $\pi_1$ is greater than or equal to the value under $\pi_2$ for every state. 
 This relationship is denoted as $\pi_1$ ≥ $\pi_2$.
@@ -110,8 +111,9 @@ $\pi_1$, have higher return in some states, while another $\pi_2$ excels in othe
 We can create a third policy $\pi_3$, that selects actions based on the better-performing policy between $\pi_1$ and $\pi_2$ for each state, ensuring $\pi_3$ is at least as good as both $\pi_1$ and $\pi_2$ in all states. 
 
 __Identify an optimal policy for a given MDP__
-
+  
 ![identifyoptimalpolicy](week3-5.png)  
+
 In this MDP we have 2 deterministic policies $\pi_1$ and $\pi_2$ defined by the agent's choice of action in the initial state X, either A1 or A2.
 
 How we select the optimal policy here is by adjusting the discount factor, gamma $\gamma$. 
