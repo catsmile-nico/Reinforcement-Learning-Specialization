@@ -116,22 +116,22 @@ __Identify an optimal policy for a given MDP__
 
 In this MDP we have 2 deterministic policies $\pi_1$ and $\pi_2$ defined by the agent's choice of action in the initial state X, either A1 or A2.
 
-How we select the optimal policy here is by adjusting the discount factor, gamma $\gamma$. 
-$\gamma = 0$
+How we select the optimal policy here is by adjusting the discount factor, gamma $\gamma$.  
+$\gamma = 0$  
 - The agent prioritizes immediate rewards, making $\pi_1$ optimal because it provides an instant reward of +1 in state X. 
 - This is suitable for scenarios where future rewards are less important. 
-
-$\gamma = 0.9$
+  
+$\gamma = 0.9$  
 - This is suitable for considering the long-term cumulative rewards, favoring $\pi_2$. 
 - The agent receives a delayed but larger reward of +2 in state X, and this choice leads to a substantially higher expected value of state X (around 9.5) when considering the discounted future rewards. 
 
 ### Defining Optimal Value Functions (or Bellman optimality equations)
 
-__Optimal state-value function ($v_*$)__  
+__Optimal state-value function__ ($v_*$)  
 The highest possible value function across all policies.  
 $$v_{\pi_*}(s) = \max_{\pi} v_{\pi}(s)$$
 
-__Optimal action-value function ($q_*$)__  
+__Optimal action-value function__ ($q_*$)  
 The highest possible action-value function across all policies.  
 $$q_{\pi_*}(s, a) = \max_{\pi} q_{\pi}(s, a)$$
 
@@ -147,9 +147,12 @@ An optimal value function measure how good each state is, by quantifying how muc
 __Determining an optimal policy__  
 Given the optimal value function $v_*$ and access to the dynamics of the environment (transition probabilities and rewards), we can derive the optimal policy $\pi_∗$ by considering all available actions in each state and selecting the action that maximizes the expected value based on the optimal value function. 
 
-__Optimal state-value function ($v_*$)__  
+__Optimal state-value function__ ($v_*$)  
+
 $$v_*(s) = \max_a \sum_{s', r} p(s', r|s, a)[r + \gamma v_*(s')]$$
-__Optimal policy function ($\pi_*$)__  
+
+__Optimal policy function__ ($\pi_*$)  
+
 $$\pi_*(s) = \arg\max_a \sum_{s', r} p(s', r|s, a)[r + \gamma v_*(s')]$$
 
 $\max$ calculates the maximum expected return achievable among all available actions  
