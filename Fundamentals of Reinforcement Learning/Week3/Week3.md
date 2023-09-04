@@ -129,18 +129,18 @@ $\gamma = 0.9$
   
 __Optimal state-value function__  
 The highest possible value function across all policies.  
-$$v_{\pi_*}(s) = \max_{\pi} v_{\pi}(s)$$
-
+$$v_{\pi_*}(s) = \max_{\pi} v_{\pi}(s)$$  
+  
 __Optimal action-value function__  
 The highest possible action-value function across all policies.  
-$$q_{\pi_*}(s, a) = \max_{\pi} q_{\pi}(s, a)$$
-
+$$q_{\pi_*}(s, a) = \max_{\pi} q_{\pi}(s, a)$$  
+  
 __How Bellman optimality equation relates to Bellman equations__  
-To derive the Bellman optimality equation for $v_{π_*}(s)$, you replace $π$ with $π_*$ in the standard Bellman equation for $v_\pi(s)$.
-Resulting in an equation that no longer depends on any specific policy and represents the maximum possible value of state $s$ under any optimal policy.
-
+To derive the Bellman optimality equation for $v_{\pi_*}(s)$, you replace $\pi$ with $\pi_*$ in the standard Bellman equation for $v_\pi(s)$.  
+Resulting in an equation that no longer depends on any specific policy and represents the maximum possible value of state $s$ under any optimal policy.  
+  
 ### Using Optimal Value Functions to Get Optimal Policies
-
+  
 __Connection between optimal value function and optimal policies__  
 An optimal value function measure how good each state is, by quantifying how much expected cumulative reward an agent can obtain when starting from that state and following an optimal policy.
 
