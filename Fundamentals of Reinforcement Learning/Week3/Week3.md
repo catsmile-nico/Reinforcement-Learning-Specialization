@@ -122,17 +122,16 @@ $\gamma = 0$
 - This is suitable for scenarios where future rewards are less important. 
   
 $\gamma = 0.9$  
-- This is suitable for considering the long-term cumulative rewards, favoring $\pi_2$. 
-- The agent receives a delayed but larger reward of +2 in state X, and this choice leads to a substantially higher expected value of state X (around 9.5) when considering the discounted future rewards. 
-
-### Defining Optimal Value Functions 
-Also known as Bellman optimality equations
+- This is suitable for considering the long-term cumulative rewards, favoring $\pi_2$.  
+- The agent receives a delayed but larger reward of +2 in state X, and this choice leads to a substantially higher expected value of state X (around 9.5) when considering the discounted future rewards.  
   
-__Optimal state-value function__ ($v_*$)  
+### Defining Optimal Value Functions (Bellman optimality equations)
+  
+__Optimal state-value function__ $v_*$  
 The highest possible value function across all policies.  
 $$v_{\pi_*}(s) = \max_{\pi} v_{\pi}(s)$$
 
-__Optimal action-value function__ ($q_*$)  
+__Optimal action-value function__ $q_*$    
 The highest possible action-value function across all policies.  
 $$q_{\pi_*}(s, a) = \max_{\pi} q_{\pi}(s, a)$$
 
