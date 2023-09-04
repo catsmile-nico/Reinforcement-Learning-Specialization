@@ -126,7 +126,7 @@ $\gamma = 0.9$
 - The agent receives a delayed but larger reward of +2 in state X, and this choice leads to a substantially higher expected value of state X (around 9.5) when considering the discounted future rewards. 
 
 ### Defining Optimal Value Functions (or Bellman optimality equations)
-
+  
 __Optimal state-value function__ ($v_*$)  
 The highest possible value function across all policies.  
 $$v_{\pi_*}(s) = \max_{\pi} v_{\pi}(s)$$
