@@ -127,11 +127,11 @@ $\gamma = 0.9$
   
 ### Defining Optimal Value Functions (Bellman optimality equations)
   
-__Optimal state-value function__ $v_*$  
+__Optimal state-value function__  
 The highest possible value function across all policies.  
 $$v_{\pi_*}(s) = \max_{\pi} v_{\pi}(s)$$
 
-__Optimal action-value function__ $q_*$    
+__Optimal action-value function__  
 The highest possible action-value function across all policies.  
 $$q_{\pi_*}(s, a) = \max_{\pi} q_{\pi}(s, a)$$
 
